@@ -1,0 +1,28 @@
+.imggallery{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr) minmax(100px, 3); 
+  grid-template-rows: repeat(3 , 1fr);
+  gap: 10px;
+  align-items: center;
+  grid-auto-rows: 100px;
+  
+}
+#bat{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start:2;
+  grid-column-end:3;
+}
+#supe{
+  grid-row: span 3;
+  grid-column: span 4;
+}
+#justice{
+  grid-area: 2/3/4/5 ;
+}
+#iron{
+ align-self: first baseline;
+}
+#cap{
+  align-content: end;
+}
